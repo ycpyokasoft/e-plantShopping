@@ -247,7 +247,6 @@ function ProductList() {
 
     const handleContinueShopping = (e) => {
         e.preventDefault();
-        setShowCart(false);
     };
 
     const handleAddToCart = (product) => {
@@ -284,7 +283,7 @@ function ProductList() {
                 <div key={index}>
                     <h1><div>{category.category}</div></h1>
                     <div className="product-list">
-                        {category.plants.map((plan, plantIndex) => (
+                        {category.plants.map((plant, plantIndex) => (
                         <div className="product-card" key={plantIndex}>
                                 <img className="product-image" src={plant.image} alt={plant.name} />
                                 <div className="product-title">{plant.name}</div>
