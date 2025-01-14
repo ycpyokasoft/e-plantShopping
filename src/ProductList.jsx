@@ -10,6 +10,7 @@ function ProductList() {
     const [addedToCart, setAddedToCart] = useState({}); // State to store the items added to the cart
     const dispatch = useDispatch();
     const totalItems = useSelector(state => state.cart.totalItems);
+    const cart = useSelector(state => state.cart);
 
     const plantsArray = [
         {
